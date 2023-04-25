@@ -14,16 +14,16 @@ body {
 /****************** Navigation *****************/
 
 .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     height: 90px;
     padding: 1.25em;
     padding-left: 25px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     background-color: #0a192f;
 }
 
@@ -74,7 +74,6 @@ label {
 
 a {
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
 }
 
 /****************** Nav Links *****************/
@@ -94,6 +93,7 @@ a {
 
 .menu a { 
     color: rgb(92, 223, 216) ;
+    font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: calc(15px + 0.390625vw);
 }
@@ -108,7 +108,17 @@ a {
     padding: 0;
     margin: 0;
 }
-
+.Profile {
+    display: flex;
+    justify-content: right;
+    margin-right: calc(40vw - 265px);
+    margin-bottom: -175px;
+}
+img {
+    width: 150px;
+    height:150px;
+    border-radius: 50%; 
+}
 h1 {
     text-align: right;
     color: #ccd6f6;
@@ -273,16 +283,37 @@ iframe {
     border: 1px dashed green;
     text-align: center;
 }
-
+.horizontal {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0 2vw;
+}
+.horizontal > li {
+    text-align: center;
+    color: #ccd6f6;
+}
+.horizontal a {
+    text-align: center;
+    color: #8892b0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
 
 /****************** Footer *****************/
 
-footer p {
-    color:#153c75; 
-    font-family: sans-serif; 
-    font-size: 14px; 
-    margin: 0; 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 70px;
     padding: 10px; 
+    text-align: center;
     border: 1px dashed yellow;
 }
 
@@ -378,18 +409,29 @@ footer p {
         transform: rotate(-315deg);
     }
     h1 {
-        margin: 0vw 10vw;
-        padding: 0;
-        font-size: 9vw;
+        margin: 0;
+        padding: 20px 10vw;
+        font-size: calc(44px + 0.390625vw);
+    }
+    .Profile {
+        display: flex;
+        justify-content: left;
+        margin: 0;
+        margin-top: -110px;
+        padding: 0 10vw;
+    }
+    img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%; 
     }
     pre {
         white-space: normal;
-        margin: 6vw 10vw;
-        padding: 0;
-        border: 1px;
+        margin: 0;
+        padding: 3vw;
         text-align: justify;
-        width: auto;
-        font-size: 4.5vw;
+        width: 100%;
+        font-size: calc(16px + 0.390625vw);
         font-weight: 400;
     }
 
