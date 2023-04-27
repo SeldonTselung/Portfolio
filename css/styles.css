@@ -248,7 +248,7 @@ p {
 
 .projects-section {
     margin: 0;
-    padding: 1em calc(40vw - 265px + 1em);
+    padding: 2em calc(40vw - 265px + 1em);
 }
 
 .projects-container {
