@@ -1,6 +1,7 @@
 # Portfolio
 
-Here's a responsive personal portfolio site built with HTML and CSS. 
+Here's a responsive personal portfolio site built with HTML and CSS.
+FYI: it's static so it can be hosted for free through github pages. 
 
 Feel free to fork this project if you're feeling the simplicity. This design was inspired by Brittany Chiang's website, which is amazing and dynamic. You can fork her work here https://github.com/bchiang7/v4
 
