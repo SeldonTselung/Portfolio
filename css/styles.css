@@ -332,6 +332,7 @@ hr {
     width: 25px;
     height: 25px;
 }
+
 /****************** Footer *****************/
 
 footer {
@@ -345,6 +346,31 @@ footer > p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: calc(10px + 0.30625vw);
+}
+
+/****************** Resources *****************/
+
+.resources {
+    background-color: white;
+}
+.border {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 6em;
+}
+.border h2 {
+    color: rgb(98, 55, 133);
+}
+.resources .vertical {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6em;
+    padding: 0;
+}
+.resources .vertical > li {
+    text-align: left;
+    padding: .5em 0;
 }
 
 /********************* Responsive *****************************/
