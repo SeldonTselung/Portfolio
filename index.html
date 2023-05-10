@@ -82,7 +82,7 @@
                             <li> AWS EC2 </li>
                             <li> Firebase </li>
                             <li> Git, GitHub</li>
-                            <li> DockerHub</li>
+                            <li> Docker, DockerHub</li>
                         </ul>  
                     </div>
                 </div>
@@ -158,16 +158,19 @@
                                 <a class="icon" href="https://github.com/SeldonTselung/NASA-Launch-App" hreflang="en" rel="external" target="_blank">
                                     <img id="Layer_1" src="public/github-project.svg">
                                 </a>
+                                <a href="http://44.202.25.46:8000/" target="_blank">
                                 <h4>NASA Launch</h4>
+                                </a>
                                 <div class="member">
                                     <img class="icon" src="public/solo.svg">
                                 </div>
                             </div>
                             <div class="description">
-                                <p> An interactive site that utilizes SpaceX's rocket launches API to allow users to choose a rocket from their database. Users also get to
-                                    select a habitable planet from NASA's database of habitable planets, choose a date of launch and finally schedule a mock launch. A scheduled launch shows up 
-                                    in the history pages of the launches. Users can then abort a launch from the history by clicking on the delete button. Currently working
-                                    on deployment through DockerHub and AWS EC2.
+                                <p> An interactive site that allows users to schedule a rocket launch to a habitable planet. Users get to select a habitable 
+                                    planet from NASA's database of habitable planets, choose a date of launch, name a specific rocket and finally schedule a mock launch.
+                                    The scheduled launch instantly shows up on the upcoming page, where a user can abort a launch by clicking on the delete button if she/he so pleases.
+                                    A launch that was aborted shows up in the history page along with a list of past launches from the user and from SpaceX by using SpaceX's rocket launches API. 
+                                    The site was containerized through DockerHub and deployed using AWS EC2 instance.
                                 </p>
                                 <p class="tech-stack"> Tech stack: React, Node, Express, Git, GitHub, Postman, Mongoose, MongoDB, Docker, AWS EC2
                                 </p>
