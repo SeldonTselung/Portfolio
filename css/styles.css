@@ -34,7 +34,7 @@ a {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: 90px;
+    height: 110px;
     padding: 1.25em;
     padding-left: 2em;
     background-color: #0a192f;
@@ -98,9 +98,8 @@ label {
     font-size: calc(15px + 0.390625vw);
 }
 
-.menu li:hover {
+.menu a:hover {
     color: #ccd6f6;
-    transform: translateY(-5px);
 }
 
 /****************** About Me *****************/
@@ -203,14 +202,14 @@ p {
     flex-direction: row wrap;
     justify-content: space-between;
     margin: 0;
-    padding: 1vw;
+    padding: 1vw 0;
 }
 
 .skill {
     background-color: #112240;
     width: auto;
     margin: 0 2vw;
-    padding: 10px 15px;
+    padding: 15px;
     border-radius: .25em;
     box-shadow: 3px 6px #5d678a;
 }
@@ -251,19 +250,30 @@ p {
 
 .project {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     background-color: #112240;
     margin: 1vw 0;
-    margin-bottom: 2vw;
-    padding: 2vw;
+    margin-bottom: 3vw;
+    padding: 1.5vw;
     border-radius: .25em;
-    box-shadow: 5px 10px #5d678a;
+    box-shadow: 6px 10px #5d678a;
 }
 
 iframe {
     display: block;
-    border: 3px solid #7e8cb9;
+    border: none;
+}
+
+.supplement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #9ba5ca;
     border-radius: .25em;
+    width: 300px;
+    height: auto;
+    max-height: 250px;
+    margin-top: .7em;
 }
 
 .description-container {
@@ -287,7 +297,7 @@ iframe {
 }
 
 .icon :hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .tech-stack {
@@ -303,7 +313,7 @@ iframe {
 
 .contact {
     position: fixed;
-    top: 60%;
+    top: 50%;
 }
 
 .references {
@@ -311,7 +321,7 @@ iframe {
 }
 
 hr {
-    border-color: rgb(92, 223, 216);
+    border-color: #babecb;
 }
 
 .references > li {
@@ -402,7 +412,7 @@ footer > p {
         right: 0;
         margin: 0;
         padding: 50px 10px;
-        width: 60%;
+        width: 70%;
         height: 100vh;
         flex-direction: column;
         justify-content: center;
@@ -509,13 +519,18 @@ footer > p {
     }
     .project {
         flex-direction: column;
+        align-items: center;
         margin: 16px 0;
         padding: 8px;
-        width: auto;
         height: auto;
+        width: auto;
     }
-    iframe {
-        width: 100%;
+    .supplement {
+        width: auto;
+        min-width: 200px;
+        max-width: 300px;
+        height: 250px;
+        margin-bottom: 10px;
     }
     .description-container {
         padding: 8px;
