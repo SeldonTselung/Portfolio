@@ -321,7 +321,8 @@ iframe {
 }
 
 hr {
-    border-color: #babecb;
+    width: 60%;
+    border-color: rgb(117, 241, 235);
 }
 
 .references > li {
