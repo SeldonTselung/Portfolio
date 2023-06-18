@@ -38,6 +38,7 @@ a {
     padding: 1.25em;
     padding-left: 2em;
     background-color: #0a192f;
+    z-index: 1;
 }
 
 /****************** Logo *****************/
